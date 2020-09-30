@@ -7,4 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>  // muestra el splash al inicio de la entrada de la app
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>

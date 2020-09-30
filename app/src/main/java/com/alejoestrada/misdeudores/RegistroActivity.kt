@@ -3,13 +3,12 @@ package com.alejoestrada.misdeudores
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import android.widget.DatePicker
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_registro.*
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class RegistroActivity : AppCompatActivity() {
 
 
     companion object {
@@ -21,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_registro)
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
@@ -104,14 +103,6 @@ class MainActivity : AppCompatActivity() {
         super.onRestart()
         Log.d("Metodo","onRestart")
     }
-
-
-//la vida es bella
-
-
-
-
-
 
 
 }
