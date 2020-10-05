@@ -21,6 +21,7 @@
     <string name="study">Study</string>
     <string name="dia_de_nacimiento">Birthday</string>
     <string name="fecha">Date</string>
+    <string name="registrar">Register</string>
 
     <string-array name="ciudades_nacimiento">
         <item> Choose a city</item>

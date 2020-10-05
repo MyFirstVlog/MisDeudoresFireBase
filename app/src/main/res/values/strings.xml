@@ -20,6 +20,7 @@
     <string name="study">Estudiar</string>
     <string name="dia_de_nacimiento">Día de nacimiento</string>
     <string name="fecha">Fecha</string>
+    <string name="registrar">Registrar</string>
 
     <string-array name="ciudades_nacimiento">
         <item> Seleccione una ciudad</item>

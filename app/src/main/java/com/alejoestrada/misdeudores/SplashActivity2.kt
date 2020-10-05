@@ -29,7 +29,7 @@ class SplashActivity2 : AppCompatActivity() {
         val intent = Intent(this, LogInActivity2::class.java)
         //start activity
         startActivity(intent)
-         finish()
+         finish() // destruyo parte interior
       }
 
 

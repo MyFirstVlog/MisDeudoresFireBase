@@ -1,10 +1,12 @@
 package com.alejoestrada.misdeudores
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.DatePicker
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_registro.*
 import java.util.*
 
@@ -21,6 +23,11 @@ class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
+
+        var datosrecibidos= intent.extras
+        val numeroEnviado= datosrecibidos?.getInt("numero")
+        Toast.makeText(this, "El numero enviado es $numeroEnviado", Toast.LENGTH_SHORT).show()
+
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
@@ -39,6 +46,7 @@ class RegistroActivity : AppCompatActivity() {
         }
 
         registrar_button.setOnClickListener {
+
             val nombre = nombre_edit_view.text.toString()
             val correo= correo_edit_text.text.toString()
             val telefono= telefono_edit_text.text.toString()
@@ -70,8 +78,21 @@ class RegistroActivity : AppCompatActivity() {
                 )
               }
 
+            val intent = Intent(this, LogInActivity2::class.java )
+            intent.putExtra("correo",correo)
+            intent.putExtra("contraseña",contrasena)
+            startActivity(intent)
+            finish() 
+
 
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, LogInActivity2::class.java )
+        startActivity(intent)
+        finish()
     }
 
     override fun onResume() {
