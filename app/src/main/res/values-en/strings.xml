@@ -22,6 +22,16 @@
     <string name="dia_de_nacimiento">Birthday</string>
     <string name="fecha">Date</string>
     <string name="registrar">Register</string>
+    <string name="digite_nombre">Name</string>
+    <string name="deuda">Debt Value</string>
+    <string name="guardar">Save</string>
+    <string name="buscar">Search</string>
+    <string name="valor_deuda">Debt Value</string>
+    <string name="campo_obligatorio">Obligatory Space</string>
+    <string name="crear">Create</string>
+    <string name="actualizar">Update</string>
+    <string name="borrar">Erase</string>
+    <string name="borrar_button">Borrar</string>
 
     <string-array name="ciudades_nacimiento">
         <item> Choose a city</item>

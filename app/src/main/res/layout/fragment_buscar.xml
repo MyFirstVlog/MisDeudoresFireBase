@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.buscar.BuscarFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/nombre_buscar_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre_buscar_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_nombre"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buscar_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00A675"
+        android:text="@string/buscar" />
+
+    <TextView
+        android:id="@+id/telefono_text_videw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/valor_deuda_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_deuda"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="20sp" />
+
+</LinearLayout>

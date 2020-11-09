@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_crear">
+
+
+    <fragment
+        android:id="@+id/nav_actualizar"
+        android:name="com.alejoestrada.misdeudores.ui.actualizar.ActualizarFragment"
+        android:label="Actualizar"
+        tools:layout="@layout/fragment_actualizar" />
+    <fragment
+        android:id="@+id/nav_borrar"
+        android:name="com.alejoestrada.misdeudores.ui.borrar.BorrarFragment"
+        android:label="Borrar"
+        tools:layout="@layout/fragment_borrar" />
+    <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.alejoestrada.misdeudores.ui.buscar.BuscarFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_buscar" />
+    <fragment
+        android:id="@+id/nav_crear"
+        android:name="com.alejoestrada.misdeudores.ui.crear.CrearFragment"
+        android:label="Crear"
+        tools:layout="@layout/fragment_crear" />
+    <fragment
+        android:id="@+id/nav_lista"
+        android:name="com.alejoestrada.misdeudores.ui.lista.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" />
+</navigation>
